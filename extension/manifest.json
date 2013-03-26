@@ -1,10 +1,20 @@
 {   
-	"name": "Rssifications",
-	"version": "1.0", "manifest_version": 2,
-	"description": "My first Chrome extension.",
+	"name": "RSSifications",
+	"version": "0.1", "manifest_version": 2,
+	"description": "Let the user receive notifications for RSS feeds he likes.",
+	"icons":
+	{
+		"16": "images/icon.png"
+	//	"48": "images/48.png",
+	//	"128": "images/128.png"
+	},
+	"homepage_url": "http://github.com/dagansandler",
+	"background_page": "background.html",
+	"permissions": ["http://insert_base_rss_url_here.com/*"],
 	"browser_action": 
 	{
-		"default_icon": "icon.png",
+		"default_icon": "images/icon.png",
+		"default_title": "RSSifications",
 		"default_popup": "popup.html" 
 	} 
 }
